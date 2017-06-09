@@ -11,6 +11,7 @@ import {
 import Home from './Home.js';
 import About from './About.js';
 import Topics from './Topic.js';
+import AuthExample from './Login.js';
 
 
 const BasicExample = () => (
@@ -20,6 +21,7 @@ const BasicExample = () => (
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/topics">Topics</Link></li>
+        <li><Link to="/login">Login</Link></li>
       </ul>
 
       <hr/>
@@ -27,6 +29,7 @@ const BasicExample = () => (
       <Route exact path="/" component={Home}/>
       <Route path="/about" component={About}/>
       <Route path="/topics" component={Topics}/>
+      <Route path="/login" component={AuthExample}/>
     </div>
   </Router>
 )
