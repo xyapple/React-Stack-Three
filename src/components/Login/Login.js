@@ -6,8 +6,8 @@ import {
   Redirect,
   withRouter
 } from 'react-router-dom'
-import Home from './Home.js';
-import Menu from './Menu.js';
+import Home from '../Home/Home.js';
+import Menu from '../Menu/Menu.js';
 ////////////////////////////////////////////////////////////
 // 1. Click the public page
 // 2. Click the protected page
