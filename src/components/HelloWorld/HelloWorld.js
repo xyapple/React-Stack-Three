@@ -10,7 +10,6 @@ function HelloWorld({message}){
 
 HelloWorld.propTypes={
 /** Message to display */
-
   message: PropTypes.string
 };
 
