@@ -7,6 +7,7 @@ import {
   withRouter
 } from 'react-router-dom'
 import Home from './Home.js';
+import Menu from './Menu.js';
 ////////////////////////////////////////////////////////////
 // 1. Click the public page
 // 2. Click the protected page
@@ -19,11 +20,11 @@ const AuthExample = () => (
       <AuthButton/>
       <ul>
         <li><Link to="/home">Home Page</Link></li>
-        <li><Link to="/protected">Protected Page</Link></li>
+        <li><Link to="/menu">Menu Page</Link></li>
       </ul>
       <Route path="/home" component={Home}/>
       <Route path="/login" component={Login}/>
-      <PrivateRoute path="/protected" component={Protected}/>
+      <PrivateRoute path="/protected" component={Menu}/>
     </div>
   </Router>
 )
@@ -65,9 +66,6 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
   )}/>
 )
 
-
-const Protected = () => <h3>Protected</h3>
-
 class Login extends React.Component {
   state = {
     redirectToReferrer: false
@@ -80,7 +78,7 @@ class Login extends React.Component {
   }
 
   render() {
-    const { from } = this.props.location.state || { from: { pathname: '/' } }
+    const { from } = this.props.location.state || { from: { pathname: '/Menu' } }
     const { redirectToReferrer } = this.state
 
     if (redirectToReferrer) {
