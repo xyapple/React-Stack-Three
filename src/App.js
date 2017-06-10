@@ -7,10 +7,10 @@ import {
   Link
 } from 'react-router-dom'
 
-import Home from './Home.js';
-import About from './About.js';
-import Topics from './Topic.js';
-import AuthExample from './Login.js';
+import Home from './components/Home.js';
+import About from './components/About.js';
+import Topics from './components/Topic.js';
+import AuthExample from './components/Login.js';
 
 
 const BasicExample = () => (
