@@ -1,5 +1,5 @@
 import React from 'react';
-import HelloWorld from '../../../components/HelloWorld/HelloWorld';
+import HelloWorld from 'xyapple-react/HelloWorld';
 
 /** Custom Message */
 export default function ExampleHelloWorld(){
